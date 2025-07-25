@@ -12,16 +12,11 @@ const resportsRoute = require("./routes/reportsRoute");
 app.use("/api/users", usersRoute);
 app.use("/api/exams", examsRoute);
 app.use("/api/reports", resportsRoute);
-//const port = process.env.PORT || 5000;
 
 
 app.get('/', (req, res) => {
   res.send('✅ Server is running successfully on Vercel!');
 });
 
-
-// app.listen(port, () => {
-//   console.log(`Server listening on port ${port}`);
-// });
-
+// Export the app for Vercel serverless function
 module.exports = app;

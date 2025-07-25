@@ -2,13 +2,13 @@
   "name": "quiz-application",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "api/index.js",
   "engines": {
     "node": "22.2.0",
     "npm": "10.8.1"
   },
   "scripts": {
-    "start": "node index.js",
+    "start": "node api/index.js",
     "dev": "concurrently \"npm run client\" \"npm start\""
   },
   "author": "",
@@ -18,10 +18,10 @@
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
     "jsonwebtoken": "^9.0.2",
-    "mongoose": "^8.3.5",
-    "nodemon": "^2.0.20"
+    "mongoose": "^8.3.5"
   },
   "devDependencies": {
+    "nodemon": "^2.0.20",
     "@vercel/node": "^5.3.6"
   }
 }
