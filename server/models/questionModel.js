@@ -17,6 +17,10 @@ const questionSchema = new mongoose.Schema({
     type: mongoose.Schema.Types.ObjectId,
     ref: "exams",
   },
+  explanation: {
+    type: String,
+    default: ""
+  }
 }, {
     timestamps: true,
 });

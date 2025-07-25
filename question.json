@@ -1,0 +1,14 @@
+[
+    {
+      "name": "What is the capital of France?",
+      "options": { "A": "Berlin", "B": "London", "C": "Paris", "D": "Madrid" },
+      "correctOption": "C",
+      "explanation": "Paris is the capital of France."
+    },
+    {
+      "name": "Which language runs in a web browser?",
+      "options": { "A": "Java", "B": "C", "C": "Python", "D": "JavaScript" },
+      "correctOption": "D",
+      "explanation": "JavaScript is the only option that runs natively in browsers."
+    }
+  ]

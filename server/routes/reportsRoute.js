@@ -53,7 +53,10 @@ router.post("/get-all-reports", authMiddleware, async (req, res) => {
         $in: matchedUserIds,
       },
     })
-      .populate("exam")
+      .populate({
+        path: "exam",
+        populate: { path: "questions" }
+      })
       .populate("user")
       .sort({ createdAt: -1 });
     res.send({
@@ -74,7 +77,10 @@ router.post("/get-all-reports", authMiddleware, async (req, res) => {
 router.post("/get-all-reports-by-user", authMiddleware, async (req, res) => {
   try {
     const reports = await Report.find({ user: req.body.userId })
-      .populate("exam")
+      .populate({
+        path: "exam",
+        populate: { path: "questions" }
+      })
       .populate("user")
       .sort({ createdAt: -1 });
     res.send({

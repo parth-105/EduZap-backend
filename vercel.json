@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "server/server.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "/server/server.js"
+    }
+  ],
+  "env": {
+    "MONGO_URL": "mongodb+srv://pranavp20000301:UindAnRh8zlJHH7x@cluster0.dxlkzq0.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
+    "JWT_SECRET": "eduzap"
+  }
+} 
