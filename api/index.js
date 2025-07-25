@@ -22,8 +22,14 @@ app.use("/api/reports", resportsRoute);
 
 
 app.get('/', (req, res) => {
-  res.send('✅ Server is running successfully on Vercel!');
+  res.send('✅ Server is running successfully on Vercel!!');
 });
 
+// const PORT = process.env.PORT || 5000;
+// app.listen(PORT, () => {
+//   console.log(`🚀 Server running on http://localhost:${PORT}`);
+// });
+
+
 // Export the app for Vercel serverless function
-module.exports = app;
+ module.exports = app;
